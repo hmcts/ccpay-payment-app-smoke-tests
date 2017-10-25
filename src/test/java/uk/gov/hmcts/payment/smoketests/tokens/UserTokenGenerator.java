@@ -25,7 +25,7 @@ public class UserTokenGenerator {
     public UserIdAndJwt authenticate() {
         String jwt = RestAssured
                 .given().auth().preemptive().basic(userEmail, userPassword)
-                .when().post(baseUrl + "/login")
+                .when().post(baseUrl + "/oauth2/authorize")
                 .then().extract().jsonPath().get("access-token");
 
         Integer id = RestAssured
