@@ -1,7 +1,7 @@
 package uk.gov.hmcts.payment.smoketests.tokens;
 
 
-public class UserIdAndJwt {
+public class UserIdAndJwt { /* Tarun */
     private final Integer id;
     private final String jwt;
 
